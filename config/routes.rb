@@ -1,8 +1,12 @@
 IkissyoursoresPage::Application.routes.draw do
   
-  match '/' => "info#main"
+  match '/' => "info#home"
   
-  root :to => "info#main"
+  root :to => "info#home"
+  
+  match "home"     => "info#home",     as: "home"
+  match "main"     => "info#main",     as: "main"
+  match "grafitti" => "info#grafitti", as: "grafitti"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

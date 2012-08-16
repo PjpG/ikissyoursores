@@ -10,7 +10,9 @@
   <header>
     <h1 id="logo">ikissyoursores</h1>
   </header>
-<%= render :partial => 'layouts/nav' %>
+<% if !@home %>
+  <%= render :partial => 'layouts/nav' %>
+<% end %>
 <section id="page">
   <%= yield %>
 </section>
