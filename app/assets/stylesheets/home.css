@@ -19,3 +19,7 @@
   color: #dfffff;
   box-shadow: 1px 0 8px #00ffff;
 }
+
+div#second_part, #previous {
+  display: none;
+}

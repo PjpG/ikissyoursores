@@ -24,9 +24,15 @@ h1#logo {
   color: #dfffff;
   text-shadow: 2px 2px 8px #00ffff;
   font-size: 60px;
+  font-family: "Zap";
+}
+
+header img {
+  width: 49.15%;
 }
 section#page {
   margin: 0 auto;
   width: 790.677165354px;
-  height: 667.842519685px;
+/*  height: 667.842519685px;*/
+  height: 490px;
 }

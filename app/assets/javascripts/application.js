@@ -15,5 +15,21 @@
 //= require_tree .
 
 $(document).ready(function() {
+  // activating fancybox
   $('.fancybox').fancybox();
+  
+  // home sliders
+  $('#next').click(function(){
+    $("#second_part").show("slide");
+    $("#first_part").hide("drop");
+    $("#previous").show();
+    $(this).hide();
+  });
+  $("#previous").click(function(){
+    $("#first_part").show("slide");
+    $("#second_part").hide("drop");
+    $("#next").show();
+    $(this).hide();
+  })
 });
+
