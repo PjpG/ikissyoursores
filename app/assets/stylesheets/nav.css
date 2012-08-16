@@ -8,12 +8,17 @@ nav {
 
 nav ul {
   list-style: none;
-  border-bottom: 2px solid #431165;
-  border-right: 2px solid #431165;
-  -webkit-border-bottom-right-radius: 39px;
-  -moz-border-radius-bottomright: 39px;
   border-bottom-right-radius: 39px;
-  padding-left: 3px;
+  background: rgba( 67, 16, 101, 0.3);
+  margin-left: -0.5em;
+  padding-left: 0.5em;
+}
+
+nav a:hover ul {
+  text-shadow: none;
+  color: #dfffff;
+  box-shadow: 1px 0 8px #00ffff;
+  
 }
 
 a {
@@ -28,14 +33,9 @@ a:visited {
 }
 
 a:hover {
-  color: #431165;
-  text-shadow: 2px 2px 8px #dfffff;
 }
 a:active {
-  color: #431165;
-  text-shadow: 2px 2px 8px #dfffff;
 }
-
 
 li {
   padding-right: 3px;

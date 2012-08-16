@@ -10,15 +10,11 @@
   border-radius: 30px;
 }
 
-/*.home-menu.all {
-  background-image: url('big/grafitti/1.JPG');
-}
-*/
 .inner {
   padding: 50px;
 }
 
-#home a:hover div#all, #home a:hover div#grafitti {
+#home a:hover div#all, #home a:hover div#grafitti, #home a:hover div#dark {
   text-shadow: none;
   color: #dfffff;
   box-shadow: 1px 0 8px #00ffff;
