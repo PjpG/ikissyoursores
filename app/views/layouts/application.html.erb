@@ -8,11 +8,10 @@
 </head>
 <body>
   <header>
-    <!-- <h1 id="logo">ikissyoursores</h1> -->
     <% if @home %>
       <%= image_tag("ikissyoursores-logo.png")%>
     <% else %>
-      <%= image_tag("ikissyoursores-logo.png", id: "no-home")%>
+      <a href="/"><%= image_tag("ikissyoursores-logo.png", id: "no-home")%></a>
     <% end %>
   </header>
 <section id="page">
