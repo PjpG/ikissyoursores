@@ -6,7 +6,7 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body onLoad="setTimeout('hideDiv()', 1000);">
   <header>
     <% if @home %>
       <%= image_tag("ikissyoursores-logo.png")%>
@@ -14,15 +14,18 @@
       <a href="/"><%= image_tag("ikissyoursores-logo.png", id: "no-home")%></a>
     <% end %>
   </header>
-<section id="page">
-  <% if !@home %>
-  <section id="gallery">
-    <%= render :partial => 'layouts/nav' %>
-    <%= yield %>
-  </section>
-  <% else %>
-    <%= yield %>
+  <% if @home %>
+    <div id="loading"><%= image_tag("loading.gif")%></div>
   <% end %>
-</section>
+  <section id="page">
+    <% if !@home %>
+    <section id="gallery">
+      <%= render :partial => 'layouts/nav' %>
+      <%= yield %>
+    </section>
+    <% else %>
+      <%= yield %>
+    <% end %>
+  </section>
 </body>
 </html>

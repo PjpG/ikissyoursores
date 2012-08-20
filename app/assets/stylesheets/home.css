@@ -62,3 +62,12 @@ span#getin {
   box-shadow: 0 0 20px black;
   height: 100%;
 }
+
+div#loading {
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}

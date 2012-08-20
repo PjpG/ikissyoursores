@@ -28,6 +28,12 @@ $(document).ready(function() {
     'marginLeft' : "-=10%"
   });
   
+  $("#loading").slideToggle("slow");
   
 });
+
+// hiding loading div
+// function hideDiv() {
+//   $("#loading").slideToggle();
+// }
 
