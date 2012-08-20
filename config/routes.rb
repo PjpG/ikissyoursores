@@ -6,7 +6,7 @@ IkissyoursoresPage::Application.routes.draw do
   
   match "home"     => "info#home",     as: "home"
   match "all"      => "info#all",      as: "all"
-  match "grafitti" => "info#grafitti", as: "grafitti"
+  match "graffiti" => "info#graffiti", as: "graffiti"
   match "dark"     => "info#dark",     as: "dark"
   
   # The priority is based upon order of creation:

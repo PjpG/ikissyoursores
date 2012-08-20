@@ -1,7 +1,0 @@
-<% @pictures.each do |picture| %>
-
-  <a class="fancybox" data-fancybox-group="gallery" title="<%= picture[:pic_lirycs]%>" href="/assets/<%= @gallery_path %>/big/<%= @gallery_name %>/<%= (picture[:picture_name] + ".jpg") %>">
-  <%= image_tag("#{@gallery_path}/small/#{@gallery_name}/" + picture[:picture_name] + ".jpg", :title => picture[:pic_lirycs]) %>
-  </a>
-
-<% end %>

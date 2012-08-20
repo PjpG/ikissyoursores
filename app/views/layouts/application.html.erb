@@ -9,13 +9,19 @@
 <body>
   <header>
     <!-- <h1 id="logo">ikissyoursores</h1> -->
-    <%= image_tag("ikissyoursores-logo.png")%>
+    <% if @home %>
+      <%= image_tag("ikissyoursores-logo.png")%>
+    <% else %>
+      <%= image_tag("ikissyoursores-logo.png", id: "no-home")%>
+    <% end %>
   </header>
-<% if !@home %>
-  <%= render :partial => 'layouts/nav' %>
-<% end %>
 <section id="page">
-  <%= yield %>
+  <section id="gallery">
+    <% if !@home %>
+      <%= render :partial => 'layouts/nav' %>
+    <% end %>
+    <%= yield %>
+  </section>
 </section>
 </body>
 </html>

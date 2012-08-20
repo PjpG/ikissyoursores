@@ -27,12 +27,13 @@ h1#logo {
   font-family: "Zap";
 }
 
-header img {
+header img, header img#no-home {
   width: 49.15%;
+  z-index: 1;
+  position: absolute;
+  margin-left: 15%;
 }
-section#page {
-  margin: 0 auto;
-  width: 790.677165354px;
-/*  height: 667.842519685px;*/
-  height: 490px;
+
+header img#no-home {
+  top: 0;
 }

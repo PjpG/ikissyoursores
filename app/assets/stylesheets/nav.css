@@ -1,24 +1,19 @@
 nav {
-  position: fixed;
-  top: 40%;
-  width: 70px;
+  position: relative;
+/*  top: 40%;*/
+  margin-left: -17.3%;
+  width: 140px;
   text-decoration: none;
+  text-align: right;
 
 }
 
 nav ul {
   list-style: none;
-  border-bottom-right-radius: 39px;
-  background: rgba( 67, 16, 101, 0.3);
-  margin-left: -0.5em;
-  padding-left: 0.5em;
 }
 
-nav a:hover ul {
-  text-shadow: none;
-  color: #dfffff;
-  box-shadow: 1px 0 8px #00ffff;
-  
+nav ul li a {
+  padding: 5px;
 }
 
 a {
@@ -37,6 +32,13 @@ a:hover {
 a:active {
 }
 
-li {
-  padding-right: 3px;
+
+#all_photos_active, #graffiti_photos_active, #dark_photos_active {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
