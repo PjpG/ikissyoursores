@@ -27,13 +27,11 @@ $(document).ready(function() {
   $('#no-home').animate({
     'marginLeft' : "-=10%"
   });
-  
-  $("#loading").slideToggle("slow");
-  
+
 });
 
 // hiding loading div
-// function hideDiv() {
-//   $("#loading").slideToggle();
-// }
+function hideDiv() {
+  $("#loading").slideToggle("slow");
+}
 

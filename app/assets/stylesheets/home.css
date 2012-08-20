@@ -71,3 +71,7 @@ div#loading {
   top: 0;
   z-index: 2;
 }
+div#loading img {
+  padding-top: 25%;
+  height: 10%;
+}
