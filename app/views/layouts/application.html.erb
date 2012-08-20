@@ -16,12 +16,14 @@
     <% end %>
   </header>
 <section id="page">
+  <% if !@home %>
   <section id="gallery">
-    <% if !@home %>
-      <%= render :partial => 'layouts/nav' %>
-    <% end %>
+    <%= render :partial => 'layouts/nav' %>
     <%= yield %>
   </section>
+  <% else %>
+    <%= yield %>
+  <% end %>
 </section>
 </body>
 </html>
