@@ -63,6 +63,30 @@ span#getin {
   height: 100%;
 }
 
+.gecko #home img#home-photo {
+  position: absolute;
+  height: 90%;
+}
+
+.gecko div#loading img {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  padding-top: 0;
+}
+
+.opera #home img#home-photo {
+  position: absolute;
+  height: 90%;
+}
+
+.opera div#loading img {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  padding-top: 0;
+}
+
 div#loading {
   background: black;
   width: 100%;

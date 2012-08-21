@@ -85,7 +85,7 @@ class InfoController < ApplicationController
         picture_name: "4"
       },
       {
-        pic_lirycs: "",
+        pic_lirycs: "sadadasdasdasdasdad",
         picture_name: "5"
       },
       {
