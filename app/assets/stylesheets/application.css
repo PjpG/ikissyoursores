@@ -52,3 +52,11 @@ span#back {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
+footer {
+  font-size: 0.6em;
+  height: 20px;
+  position: absolute;
+  right: 1%;
+  bottom: 1%;  
+}
