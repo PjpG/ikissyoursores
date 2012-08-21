@@ -1,9 +1,36 @@
-<section id="gallery">
-  <section id="all_pictures">
-    <% @all_pictures.each do |picture| %>
-        <a class="fancybox" data-fancybox-group="gallery" title="<%= picture[:pic_lirycs]%>" href="/assets/<%= @gallery_path %>/big/<%= (picture[:picture_name] + ".jpg") %>">
-        <%= image_tag("#{@gallery_path}/small/" + picture[:picture_name] + ".jpg", :title => picture[:pic_lirycs]) %>
-        </a>
-    <% end %>    
+<div class="all">
+  <section id="gallery_inner">
+    <section id="all_pictures">
+      <% @all_pictures.each do |picture| %>
+          <a class="fancybox-all" data-fancybox-group="gallery" title="<%= picture[:pic_lirycs]%>" href="/assets/<%= @gallery_path %>/big/<%= (picture[:picture_name] + ".jpg") %>">
+          <%= image_tag("#{@gallery_path}/small/" + picture[:picture_name] + ".jpg", :title => picture[:pic_lirycs]) %>
+          </a>
+      <% end %>    
+    </section>
   </section>
-</section>
+</div>
+
+
+<div class="dark">
+  <section id="gallery_inner">
+    <section id="dark_pictures">
+  <% @dark_pictures.each do |picture| %>
+    <a class="fancybox-dark" data-fancybox-group="gallery" title="<%= picture[:pic_lirycs]%>" href="/assets/<%= @gallery_path %>/big/<%= @gallery_name %>/<%= (picture[:picture_name] + ".jpg") %>">
+    <%= image_tag("#{@gallery_path}/small/#{@gallery_name}/" + picture[:picture_name] + ".jpg", :title => picture[:pic_lirycs]) %>
+    </a>
+  <% end %>
+    </section>
+  </section>
+</div>
+
+<div class="graffiti">
+  <section id="gallery_inner">
+    <section id="graffiti_pictures">
+      <% @graffiti_pictures.each do |picture| %>
+        <a class="fancybox-graffiti" data-fancybox-group="gallery" title="<%= picture[:pic_lirycs]%>" href="/assets/<%= @gallery_path %>/big/<%= @gallery_name %>/<%= (picture[:picture_name] + ".jpg") %>">
+        <%= image_tag("#{@gallery_path}/small/#{@gallery_name}/" + picture[:picture_name] + ".jpg", :title => picture[:pic_lirycs]) %>
+        </a>
+      <% end %>
+    </section>
+  </section>
+</div>

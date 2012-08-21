@@ -16,7 +16,11 @@
 
 $(document).ready(function() {
   // activating fancybox
-  $('.fancybox').fancybox();
+  $('.fancybox-all').fancybox();
+  
+  $('.fancybox-dark').fancybox();
+  
+  $('.fancybox-graffiti').fancybox();
   
   // home animation
   $('#desc-logo').hover(function(){
@@ -27,7 +31,48 @@ $(document).ready(function() {
   $('#no-home').animate({
     'marginLeft' : "-=10%"
   });
+  
+  $('#no-home').hover(function(){
+    $('#back').fadeToggle("fast");
+  });
+  
+  // gallery animations
+  
+  $('#all_photos').click(function(){
+    $(this).removeClass("unactive")
+    $(this).addClass("active");
+    $('#graffiti_photos').removeClass('active');
+    $('#graffiti_photos').addClass('unactive');
+    $('#dark_photos').removeClass('active');
+    $('#dark_photos').addClass("unactive");
+    $('.dark').hide();
+    $('.graffiti').hide();
+    $('.all').fadeIn("slow");
+  });
+  
+  $('#graffiti_photos').click(function(){
+    $(this).removeClass("unactive")
+    $(this).addClass("active");
+    $('#dark_photos').removeClass('active');
+    $('#dark_photos').addClass("unactive");
+    $('#all_photos').removeClass("active");
+    $('#all_photos').addClass("unactive");
+    $('.dark').hide();
+    $('.all').hide();
+    $('.graffiti').fadeIn("slow");
+  });
 
+  $('#dark_photos').click(function(){
+    $(this).removeClass("unactive");
+    $(this).addClass("active");
+    $('#all_photos').removeClass("active");
+    $('#all_photos').addClass("unactive");
+    $('#graffiti_photos').removeClass('active');
+    $('#graffiti_photos').addClass('unactive');
+    $('.all').hide();
+    $('.graffiti').hide();
+    $('.dark').fadeIn("slow");
+  });
 });
 
 // hiding loading div

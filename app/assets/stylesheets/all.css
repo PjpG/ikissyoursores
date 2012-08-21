@@ -1,7 +1,7 @@
-section#gallery {
+section#gallery, #gallery_inner {
   margin: 0 auto;
   margin-top: 15%;
-  height: 400px;
+  height: 450px;
   width: 810px;
   background: rgba(255, 255, 255, 0.7);
   -webkit-border-radius: 4px;
@@ -12,8 +12,20 @@ section#gallery {
   border-top-left-radius: 0;
 }
 
+div section#gallery_inner {
+  margin-top: 7%;
+}
+
 #all_pictures, #graffiti_pictures, #dark_pictures {
   margin: 0 auto;
   padding: 1%;
   margin-top: -20%;
+}
+
+div.dark, div.graffiti {
+  display: none;
+}
+
+.all, .dark, .graffiti {
+  position: relative;
 }
