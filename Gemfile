@@ -20,6 +20,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'google-analytics-rails'
+
 gem 'jquery-rails'
 
 group :production do 
