@@ -1,5 +1,7 @@
 IkissyoursoresPage::Application.routes.draw do
   
+  
+  get '/robots.txt' => 'info#robots'
   match '/' => "info#home"
   
   root :to => "info#home"

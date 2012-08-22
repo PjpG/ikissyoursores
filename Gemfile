@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem 'google-analytics-rails'
+gem 'sitemap_generator'
 
 gem 'jquery-rails'
 
