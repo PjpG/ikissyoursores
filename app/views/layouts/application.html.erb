@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>iKissYourSores - portfolio</title>
-  <meta name="keywords" content />
+  <meta name="keywords" content="i kiss your sores, ikissyoursores, fotomodelka, modelka, polska, portfolio, galeria, zdjęcia, modelka jg, jelenia góra" />
   <meta name="description" content="Teen beginning photomodel from Poland with good ideas for pictures and predispositions. Get in and see." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -15,6 +15,8 @@
     <% if @home %>
       <%= image_tag("ikissyoursores-logo.png")%>
     <% else %>
+      <a href="http://lookbook.nu/bluemeanie"><%= image_tag('lookbooklogo-long.png', id: 'lookbook')%></a>
+      <a href="http://followgram.me/ikissyoursores"><%= image_tag('followgramlogo-black.png', id: 'followgram')%></a>
       <a href="/"><%= image_tag("ikissyoursores-logo.png", id: "no-home")%></a>
       <span id="back">back to home page</span>
     <% end %>

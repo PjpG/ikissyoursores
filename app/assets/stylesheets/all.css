@@ -29,3 +29,15 @@ div.dark, div.graffiti {
 .all, .dark, .graffiti {
   position: relative;
 }
+
+header img#lookbook, header img#followgram {
+  position: absolute;
+  width: 15%;
+  right: -10%;
+  margin: 0;
+}
+
+header img#followgram {
+  top: 33.5%;
+
+}

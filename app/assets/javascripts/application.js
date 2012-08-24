@@ -21,23 +21,21 @@ $(document).ready(function() {
   $('.fancybox-dark').fancybox();
   
   $('.fancybox-graffiti').fancybox();
-  
+//   
   // home animation
   $('#desc-logo').hover(function(){
     $('#getin').toggle("drop");
   });
-  
+//   
   // logo animation
   $('#no-home').animate({
     'marginLeft' : "-=10%"
   });
-  
   $('#no-home').hover(function(){
     $('#back').fadeToggle("fast");
   });
-  
+//   
   // gallery animations
-  
   $('#all_photos').click(function(){
     $(this).removeClass("unactive")
     $(this).addClass("active");
@@ -49,7 +47,6 @@ $(document).ready(function() {
     $('.graffiti').hide();
     $('.all').fadeIn("slow");
   });
-  
   $('#graffiti_photos').click(function(){
     $(this).removeClass("unactive")
     $(this).addClass("active");
@@ -61,7 +58,6 @@ $(document).ready(function() {
     $('.all').hide();
     $('.graffiti').fadeIn("slow");
   });
-
   $('#dark_photos').click(function(){
     $(this).removeClass("unactive");
     $(this).addClass("active");
@@ -73,6 +69,44 @@ $(document).ready(function() {
     $('.graffiti').hide();
     $('.dark').fadeIn("slow");
   });
+//   
+  // social sliders
+  $('#lookbook').mouseenter(function() {
+    $(this).animate({
+      'right' : '0%'
+    }, {
+      duration: 1000,
+      specialEasing: {
+        width: 'linear',
+        height: 'easeOutBounce'
+      }
+    });
+  });
+  $('#lookbook').mouseleave(function(){
+    $(this).animate({
+      'right' : '-10%'
+    }, 1000);
+  });
+  
+  $('#followgram').mouseenter(function() {
+    $(this).animate({
+      'right' : '0%'
+    }, {
+      duration: 1000,
+      specialEasing: {
+        width: 'linear',
+        height: 'easeOutBounce'
+      }
+    });
+  });
+  $('#followgram').mouseleave(function(){
+    $(this).animate({
+      'right' : '-10%'
+    }, 1000);
+  });
+  
+  
+//   
 });
 
 // hiding loading div
