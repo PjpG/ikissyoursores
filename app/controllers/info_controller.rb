@@ -54,26 +54,21 @@ class InfoController < ApplicationController
     @gallery_full_path = "app/assets/images/all/big"
     @dark_pictures = [
       {
-        pic_lirycs: "",
         picture_name: "3"
       },
       {
-        pic_lirycs: "",
         picture_name: "7"
       },
       {
-        pic_lirycs: "",
         picture_name: "9"
       },
       {
-        pic_lirycs: "",
         picture_name: "8"
       }
     ]
     
     @graffiti_pictures = [
       {
-        pic_lirycs: "sialalala",
         picture_name: "1"
       }
     ]
@@ -81,23 +76,18 @@ class InfoController < ApplicationController
     
     @other_pictures = [
       {
-        pic_lirycs: File.open("#{@gallery_full_path}/2.txt").read,
         picture_name: "2"
       },
       {
-        pic_lirycs: "",
         picture_name: "4"
       },
       {
-        pic_lirycs: "sadadasdasdasdasdad",
         picture_name: "5"
       },
       {
-        pic_lirycs: "",
         picture_name: "6"
       },
       {
-        pic_lirycs: "",
         picture_name: "10"
       }
     ]
