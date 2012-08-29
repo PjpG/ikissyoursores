@@ -33,11 +33,12 @@ div.dark, div.graffiti {
 header img#lookbook, header img#followgram {
   position: absolute;
   width: 15%;
-  right: -10%;
+  right: -11%;
   margin: 0;
+  box-shadow: 0 0 8px black;
 }
 
 header img#followgram {
-  top: 33.5%;
+  top: 34%;
 
 }

@@ -51,7 +51,7 @@ class InfoController < ApplicationController
   
   def load_galleries
     @gallery_path = "all"
-    
+    @gallery_full_path = "app/assets/images/all/big"
     @dark_pictures = [
       {
         pic_lirycs: "",
@@ -81,7 +81,7 @@ class InfoController < ApplicationController
     
     @other_pictures = [
       {
-        pic_lirycs: "sialalalalala",
+        pic_lirycs: File.open("#{@gallery_full_path}/2.txt").read,
         picture_name: "2"
       },
       {

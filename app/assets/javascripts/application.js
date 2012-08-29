@@ -73,9 +73,9 @@ $(document).ready(function() {
   // social sliders
   $('#lookbook').mouseenter(function() {
     $(this).animate({
-      'right' : '0%'
+      'right' : '-10%'
     }, {
-      duration: 1000,
+      duration: 500,
       specialEasing: {
         width: 'linear',
         height: 'easeOutBounce'
@@ -84,13 +84,13 @@ $(document).ready(function() {
   });
   $('#lookbook').mouseleave(function(){
     $(this).animate({
-      'right' : '-10%'
+      'right' : '-11%'
     }, 1000);
   });
   
   $('#followgram').mouseenter(function() {
     $(this).animate({
-      'right' : '0%'
+      'right' : '-10%'
     }, {
       duration: 1000,
       specialEasing: {
@@ -101,7 +101,7 @@ $(document).ready(function() {
   });
   $('#followgram').mouseleave(function(){
     $(this).animate({
-      'right' : '-10%'
+      'right' : '-11%'
     }, 1000);
   });
   
