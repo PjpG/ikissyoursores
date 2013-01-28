@@ -71,39 +71,39 @@ $(document).ready(function() {
   });
 //   
   // social sliders
-  $('#lookbook').mouseenter(function() {
-    $(this).animate({
-      'right' : '-10%'
-    }, {
-      duration: 500,
-      specialEasing: {
-        width: 'linear',
-        height: 'easeOutBounce'
-      }
-    });
-  });
-  $('#lookbook').mouseleave(function(){
-    $(this).animate({
-      'right' : '-11%'
-    }, 1000);
-  });
-  
-  $('#followgram').mouseenter(function() {
-    $(this).animate({
-      'right' : '-10%'
-    }, {
-      duration: 1000,
-      specialEasing: {
-        width: 'linear',
-        height: 'easeOutBounce'
-      }
-    });
-  });
-  $('#followgram').mouseleave(function(){
-    $(this).animate({
-      'right' : '-11%'
-    }, 1000);
-  });
+  // $('#lookbook').mouseenter(function() {
+  //   $(this).animate({
+  //     'right' : '-10%'
+  //   }, {
+  //     duration: 500,
+  //     specialEasing: {
+  //       width: 'linear',
+  //       height: 'easeOutBounce'
+  //     }
+  //   });
+  // });
+  // $('#lookbook').mouseleave(function(){
+  //   $(this).animate({
+  //     'right' : '-11%'
+  //   }, 1000);
+  // });
+  // 
+  // $('#followgram').mouseenter(function() {
+  //   $(this).animate({
+  //     'right' : '-10%'
+  //   }, {
+  //     duration: 500,
+  //     specialEasing: {
+  //       width: 'linear',
+  //       height: 'easeOutBounce'
+  //     }
+  //   });
+  // });
+  // $('#followgram').mouseleave(function(){
+  //   $(this).animate({
+  //     'right' : '-11%'
+  //   }, 1000);
+  // });
   
   
 //   
