@@ -17,14 +17,11 @@
 #home {
   margin: 0 auto;
   margin-top: 3%;
-/*  height: 700px;
-  width: 525px;
-*/
   height: 90%;
   width: 40%;
 }
 
-img#desc-logo {
+#desc-logo {
   width: 29.15%;
   z-index: 1;
   position: absolute;
@@ -32,7 +29,7 @@ img#desc-logo {
   right: 25%;
 }
 
-span#getin {
+#getin {
   display: none;
   position: absolute;
   bottom: 7.5%;
@@ -52,42 +49,38 @@ span#getin {
   text-align: center;
 }
 
-#home img#home-photo {
-/*  height: 700px;
-  position: absolute;
-  left: 10%;
-  top: 7%;
-*/  opacity: 0.5;
+#home #home-photo {
+  opacity: 0.5;
   z-index: -1;
   box-shadow: 0 0 20px black;
   height: 100%;
 }
 
-.gecko #home img#home-photo {
+.gecko #home #home-photo {
   position: absolute;
   height: 90%;
 }
 
-.gecko div#loading img {
+.gecko #loading img {
   position: absolute;
   left: 45%;
   top: 45%;
   padding-top: 0;
 }
 
-.opera #home img#home-photo {
+.opera #home #home-photo {
   position: absolute;
   height: 90%;
 }
 
-.opera div#loading img {
+.opera #loading img {
   position: absolute;
   left: 45%;
   top: 45%;
   padding-top: 0;
 }
 
-div#loading {
+#loading {
   background: black;
   width: 100%;
   height: 100%;
@@ -96,7 +89,7 @@ div#loading {
   left: 0;
   z-index: 2;
 }
-div#loading img {
+#loading img {
   padding-top: 25%;
   height: 10%;
 }

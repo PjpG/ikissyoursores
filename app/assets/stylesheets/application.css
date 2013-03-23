@@ -20,25 +20,25 @@ body {
 */ color: #dfffff;
 }
 
-h1#logo {
+#logo {
   color: #dfffff;
   text-shadow: 2px 2px 8px #00ffff;
   font-size: 60px;
   font-family: "Zap";
 }
 
-header img, header img#no-home {
+header img, header #no-home {
   width: 49.15%;
   z-index: 1;
   position: absolute;
   margin-left: 15%;
 }
 
-header img#no-home {
+header #no-home {
   top: 0;
 }
 
-span#back {
+#back {
   display: none;
   padding: 0 5px;
   position: absolute;
